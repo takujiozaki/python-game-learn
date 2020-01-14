@@ -46,9 +46,11 @@ class FindLetter:
 		return q_str
 
 	def your_answer(self, answer):
+		#解答を取り込む
 		self.answer = answer
 
 	def judge(self):
+		#判定
 		judgement = ''
 		if self.answer == self.r:
 			judgement = '正解！ 解答にかかった時間は{}秒でした'.format(self.get_diff_time())
@@ -57,14 +59,17 @@ class FindLetter:
 		return judgement
 	
 	def set_play_time(self):
+		#時間を計測
 		self.playtime.append(datetime.datetime.now())
 
 	def get_diff_time(self):
+		#時間差を取得
 		playtime = (self.playtime[1] - self.playtime[0]).seconds
 		return playtime 
 
-
+#gameをインスタンス化
 game = FindLetter()
+#入出力をインスタンス化
 io = SystemIO()
 #問題出力
 io.print(game.description())
