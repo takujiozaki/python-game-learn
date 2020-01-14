@@ -7,7 +7,7 @@ import random
 import datetime
 
 #入出力
-class SystemIO:
+class SystemIO(object):
 	def print(self, word):
 		print(word)
 
@@ -15,7 +15,7 @@ class SystemIO:
 		return(input())
 
 #game flow
-class FindLetter:
+class FindLetter(object):
 	#プロパティ
 	QUESTION = ''
 	r = ''
