@@ -3,6 +3,8 @@ from turtle import *
 t1 = Turtle()
 t2 = Turtle()
 
+# t1.shape('turtle')
+
 t1.color('red')
 t2.color('blue')
 
