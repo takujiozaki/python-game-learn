@@ -32,6 +32,7 @@ class FindLetter(object):
 		]
 		#正解
 		self.r = random.choice(self.QUESTION)
+		#print(self.r)
 
 	def description(self):
 		#説明
@@ -47,7 +48,7 @@ class FindLetter(object):
 
 	def your_answer(self, answer):
 		#解答を取り込む
-		self.answer = answer
+		self.answer = answer.upper()
 
 	def judge(self):
 		#判定
